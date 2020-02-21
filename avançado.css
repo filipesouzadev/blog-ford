@@ -1,0 +1,82 @@
+/*seletor de irmão adjacente VAI PEGAR SOMENTE O IRMÃO SEGUINTE */
+article h1+p+p{
+    background-color: yellow;
+    
+}
+/*seletor de irmão VAI PEGAR TODOS OS IRMÃOS SUBSEQUENTES*/
+article h1~p{
+    border: 1px solid;
+}
+/*seletor de filho direto SÓ VAI PEGAR O QUE FOR FILHO DIRETO*/
+section>h1{
+    text-transform: uppercase;
+    
+}
+section nav a{
+    color:green;
+}
+/*seletor de negação VAI PEGAR TUDO EXCETO O QUE EU SELECIONAR*/
+.site-container h1:not(.header-logo) {
+    display: none;
+}
+/*pseudoclasses*/
+header li{
+    border-top: 5px solid red;
+}
+header li:first-child{
+    border-color: green;
+
+}
+header li:nth-child(3){
+    border-color:yellow
+
+}
+header li:last-child{
+    border-color: orange;
+}
+header li:nth-child(2n+1){
+    background:silver;
+}
+header a{
+    display: block;
+   
+}
+/*pseudoelementos*/
+p::first-line{
+    font-size: 2em;
+    color:red;
+    font-weight: bold;
+}
+section nav a::before{
+    content: '  \2707';
+}
+section nav a::after{
+    content: "]";
+}
+figcaption{
+    border-radius: 15px 0;
+    box-shadow: -15px -15px 10px red, 15px 15px 10px blue;
+}
+section h1{
+    display: block!important;
+    text-shadow: 10px 10px 5px black;
+}
+section{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.header-logo a:hover{
+    /*Distorcer o eixo
+    Girar
+    Carrocel
+    Transformação Seca 
+    Muda o estado do elemento
+    Duas propriedades para pegar o momento da transição*/
+    transform: scale(1.5) rotate(360deg) translateX(50x);
+    transition: 0.5s ease;
+
+}
+.header-logo a{
+    transition: 0.5s ease-in-out;
+    transform: skewX(10deg);
+}

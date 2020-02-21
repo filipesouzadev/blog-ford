@@ -1,0 +1,158 @@
+body {
+    font-family: Arial;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+.site-container {
+    /*border: 2px solid; borda sólida de 2 pixels*/
+    width: 1200px;
+    /*tamanho que o site terá para ser exibido nas telas do usuário*/
+    margin-left: auto;
+    /*quanto de margem eu quero do lado esquerdo da tela*/
+    margin-right: auto;
+    /*quanto de margem eu quero do lado direito da tela*/
+}
+
+header, footer {
+    /*background-color: silver;  cor de fundo*/
+   /*min-height: 150px;*/
+    /* altura em pixels*/
+}
+
+main {
+    /*background-color: cyan;*/
+    /* cor de fundo*/
+    min-height: 600px;
+    /*altura em pixels da parte principal*/
+}
+
+.header-logo a {
+    /*background-color: yellow;*/
+    width: 272px;
+    height: 103px;
+    background-image: url(logo-ford.webp);
+    /*inserindo o logo*/
+    background-repeat: no-repeat;
+    /*repetição do logo*/
+    background-position: left top;
+    /*background-size: contain;*/
+    text-indent: -9000px;
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.header-menu li {
+    /*border: 1px solid red;*/
+    display: block;
+    width: 200px;
+    float: left;
+    text-align: center;
+    line-height: 2;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu a {
+    color: inherit;
+    /*valor que promove a herança*/
+    text-decoration: inherit;
+}
+
+.header-menu li:hover {
+    background-color: orange;
+    color: black;
+}
+
+.main-highlight {
+    position: relative;
+}
+
+.main-highlight-title {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 3em;
+    /*display: inline-block;*/
+    padding: 16px;
+    position: absolute;
+    bottom: 25px;
+    left: 22px;
+    opacity: ;
+}
+
+.main-highlight-img {
+    display: block;
+}
+
+section[role=content]{
+   /*background-color: orange;*/
+   width: 900px;
+   float: left;
+   min-height: 800px;
+   padding-left: 20px;
+   padding: 32px;
+}
+section[role=sidebar]{
+    background-color:#dadada;
+    width: 300px;
+    float: right;
+    min-height: 800px;
+    padding: 32px;
+}
+article{    
+    padding: 0 0 1.5em 0;
+}
+article h1{
+    font-size: 2.5em;/*muda o tamanho do título*/
+}
+article p{
+    padding: 0 0 0.5em 0;
+}
+section[role=sidebar] h1{
+    font-size: 2em;
+}
+.footer-icons a{
+    width: 98px;
+    height: 98px;
+    background-image: url(icons.png);
+    /*border: 1px solid;*/  
+    display:    block;
+    float: left;
+    margin-left: 16px;
+  
+}
+.fb:hover{
+    background-position: -206px  -714px ;
+}
+.fb{
+    background-position: -206px -520px;
+    text-indent: -9000px;
+
+}
+.tt{
+    background-position: -406px -520px;;
+    text-indent: -9000px;
+}
+.tt:hover{
+    background-position: -406px  -714px;
+}
+.ig{
+    background-position: -586px -520px;;
+    text-indent: -9000px;
+}
+.ig:hover{
+    background-position: -586px  -714px;
+}
+.footer-copy{
+    float: left;
+    line-height: 98px;
+}
+.footer-icons{
+    float: right;
+}
+footer{
+    background: #c7c7c7;
+    padding: 2em;
+}
